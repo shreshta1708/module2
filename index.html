@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.food-section {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    background: #e2e2e2;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ccc;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    .food-section {
+        width: 30%;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    .food-section {
+        width: 45%;
+    }
+    .food-section:nth-child(3) {
+        width: 100%;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .food-section {
+        width: 100%;
+    }
+}
+</style>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Solution</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Delicious Food</h1>
+    </header>
+    <main>
+        <section class="food-section" id="chicken">
+            <h2 class="section-title">Chicken</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula cursus vestibulum.</p>
+        </section>
+        <section class="food-section" id="beef">
+            <h2 class="section-title">Beef</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula cursus vestibulum.</p>
+        </section>
+        <section class="food-section" id="sushi">
+            <h2 class="section-title">Sushi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula cursus vestibulum.</p>
+        </section>
+    </main>
+</body>
+</html>
 
